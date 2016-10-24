@@ -89,14 +89,14 @@ public class FileListAdapter extends BaseAdapter{
         {   holder = (ViewHolder)view.getTag();
         }
         final FileListItem item = listItem.get(i);
-        if (MarkedItemList.hasItem(item.getLocation())) {
+        /*if (MarkedItemList.hasItem(item.getLocation())) {
             Animation animation = AnimationUtils.loadAnimation(context,R.anim.marked_item_animation);
             view.setAnimation(animation);
         }
         else {
             Animation animation = AnimationUtils.loadAnimation(context,R.anim.unmarked_item_animation);
             view.setAnimation(animation);
-        }
+        }*/
         if (item.isDirectory()) {
             holder.type_icon.setImageResource(R.mipmap.ic_type_folder);
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
